@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overlapping Divs</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+    }
+
+    .red {
+      background-color: red;
+      top: 20px;
+      left: 20px;
+      z-index: 3;
+    }
+
+    .yellow {
+      background-color: yellow;
+      top: 60px;
+      left: 60px;
+      z-index: 2;
+    }
+
+    .blue {
+      background-color: blue;
+      top: 100px;
+      left: 100px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box red"></div>
+  <div class="box yellow"></div>
+  <div class="box blue"></div>
+</body>
+</html>
